@@ -44,7 +44,7 @@ table tr:nth-child(2n+1) {
 table tr:last -child td{
 	box-shadow: 2px 2px 1px rgba(0,0,0,0.1);
 }
-table tr:lat-child td:first-child {
+table tr:last-child td:first-child {
 	border-radius: 0 0 0 5px;
 }
 table tr:last-child td:last-child{
