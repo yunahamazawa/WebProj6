@@ -5,6 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="./css/style.css">
 <title>HelloStruts</title>
 </head>
 <body>
@@ -19,8 +20,8 @@
 		<th>PASSWORD</th>
 		<th>RESULT</th>
 	</tr>
-	
-	
+
+
 	<s:iterator value="helloStrutsDTOList">
 	<tr>
 	<td><s:property value="userId"/></td>

@@ -1,4 +1,5 @@
-package com.diworksdev.webproj6.action.com;
+package com.diworksdev.webproj6.action;
+
 
 
 import java.util.ArrayList;
@@ -8,7 +9,10 @@ import com.diworksdev.webproj6.dao.HelloStrutsDAO;
 import com.diworksdev.webproj6.dto.HelloStrutsDTO;
 import com.opensymphony.xwork2.ActionSupport;
 
+
+
 public class HelloStrutsAction extends ActionSupport{
+
 
 	private List<HelloStrutsDTO> HelloStrutsDTOList = new ArrayList<HelloStrutsDTO>();
 
@@ -16,10 +20,11 @@ public class HelloStrutsAction extends ActionSupport{
 	public String execute() {
 		String ret=ERROR;
 
+
 		HelloStrutsDAO dao=new HelloStrutsDAO();
 
-
 		HelloStrutsDTOList=dao.select();
+
 
 
 		if(HelloStrutsDTOList.size() > 0){
@@ -28,12 +33,13 @@ public class HelloStrutsAction extends ActionSupport{
 			ret=ERROR;
 		}
 		return ret;
-		}
-		public List<HelloStrutsDTO> getHelloStrutsDTOList() {
-			return HelloStrutsDTOList;
-		}
+	}
 
-		public void setHelloStrutsDTOList(List<HelloStrutsDTO> helloStrutsDTOList) {
-			HelloStrutsDTOList = helloStrutsDTOList;
-		}
+
+	public List<HelloStrutsDTO> getHelloStrutsDTOList() {
+		return HelloStrutsDTOList;
+	}
+	public void setHelloStrutsDTOList(List<HelloStrutsDTO> helloStrutsDTOList) {
+		HelloStrutsDTOList = helloStrutsDTOList;
+	}
 }
