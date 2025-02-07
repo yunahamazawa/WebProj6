@@ -1,4 +1,4 @@
-package diworksdev.webproj6.dto;
+package com.diworksdev.webproj6.dto;
 
 public class HelloStrutsDTO {
 	private int userId;

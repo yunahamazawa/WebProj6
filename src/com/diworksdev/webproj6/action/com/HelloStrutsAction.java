@@ -4,10 +4,9 @@ package com.diworksdev.webproj6.action.com;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.diworksdev.webproj6.dao.HelloStrutsDAO;
+import com.diworksdev.webproj6.dto.HelloStrutsDTO;
 import com.opensymphony.xwork2.ActionSupport;
-
-import diworksdev.webproj6.dao.com.HelloStrutsDAO;
-import diworksdev.webproj6.dto.HelloStrutsDTO;
 
 public class HelloStrutsAction extends ActionSupport{
 

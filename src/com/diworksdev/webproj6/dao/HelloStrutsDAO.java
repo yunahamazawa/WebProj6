@@ -1,4 +1,4 @@
-package diworksdev.webproj6.dao.com;
+package com.diworksdev.webproj6.dao;
 
 
 import java.sql.Connection;
@@ -8,9 +8,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.diworksdev.webproj6.dto.HelloStrutsDTO;
 import com.diworksdev.webproj6.util.DBConnector;
-
-import diworksdev.webproj6.dto.HelloStrutsDTO;
 
 
 public class HelloStrutsDAO {
